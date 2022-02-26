@@ -1,0 +1,54 @@
+section
+{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+h1
+{
+    font-weight: bold;
+}
+.projects-container .row
+{
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.projects-container a
+{
+    text-decoration: none;
+    color: black;   
+}
+h3
+{
+    transition: 0.5s; 
+}
+.project:hover h3
+{
+    color: blue;
+}
+.fade 
+{
+    animation-name: fadein;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }  
+  
+.buttonTop i
+{
+    color: #1368cc;
+    position: fixed; 
+    right: 35px;
+    bottom: 50px;
+    z-index: 999;
+}
+.buttonTop i:hover
+{
+    cursor: pointer;
+    color: #003c80;
+}

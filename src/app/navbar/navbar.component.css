@@ -1,0 +1,15 @@
+.circle
+{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #eea302;
+    border-radius: 50%;
+}
+@media (max-width:450px)
+{
+    small
+    {
+        display: none;
+    }
+}

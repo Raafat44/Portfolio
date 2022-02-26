@@ -1,0 +1,56 @@
+<section class="fade">
+    <div class="row">
+        <div class="col-lg-5 header">
+            <h1>Contact</h1>
+            <p>Looking forward to hearing from you</p>        
+            <h5>Phone</h5>
+            <p>01122838907</p>
+            <h5>Email</h5>
+            <p>Raafat44.Medhat44@gmail.com</p>
+        </div>
+        <form (ngSubmit)="onsubmit()" #f="ngForm" class="col-lg-7 detail" [formGroup]="form">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label >First Name</label>
+                    <br>
+                    <input type="text" formControlName="firstname" required>
+                    <span *ngIf="!form.get('firstname').valid && form.get('firstname').touched">please enter your firstname!</span>
+                </div>
+                <div class="col-sm-5">
+                    <label >last Name</label>
+                    <br>
+                    <input type="text" formControlName="lastname" required >
+                    <span *ngIf="!form.get('lastname').valid && form.get('lastname').touched">please enter your lastname!</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <label >Email</label>
+                    <br>
+                    <input type="text" formControlName="email" email required>
+                    <span *ngIf="!form.get('email').valid && form.get('email').touched">please enter a vaild email!</span>
+                </div>
+                <div class="col-sm-5">
+                    <label >Subject</label>
+                    <br>
+                    <input type="text" formControlName="subject">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label >Message</label>
+                    <br>
+                    <textarea formControlName="message" ></textarea>
+                </div>
+                <div class="col-sm-4">
+                   <button [disabled]="!f.valid">submit</button>
+                </div>
+            </div>
+            <div class="row" *ngIf="ctrl" >
+                <div class="col-sm-12">
+                    <span>Thanks for submitting!</span>                    
+                </div>                
+            </div>
+        </form>
+    </div>
+</section>
