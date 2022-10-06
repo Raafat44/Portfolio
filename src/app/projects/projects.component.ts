@@ -16,6 +16,7 @@ export class ProjectsComponent implements OnInit {
   TaskManager:string = "assets/images/taskmanager.png";
   EcommerceApp:string = "assets/images/ecommerceapp.png";
   BankSystem:string = "assets/images/banksystem.png";
+  BankSystem2:string = "assets/images/banksystem2.png";
   constructor() { }
 
   ngOnInit(): void {

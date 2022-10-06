@@ -20,6 +20,9 @@ export class AboutComponent implements OnInit {
   java:string = "assets/images/java.png";
   sql:string = "assets/images/sql.png";
   firebase:string = "assets/images/firebase.png";
+  php:string = "assets/images/php.png";
+  mysql:string = "assets/images/mysql.png";
+  laravel:string = "assets/images/laravel.png";
   constructor() { }
 
   ngOnInit(): void {
